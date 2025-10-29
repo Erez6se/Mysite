@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G.U.T.M.A.N.N GmbH</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Times New Roman", serif;
+      background-color: #f9f9f9;
+      color: #222;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    header, section {
+      padding: 80px 10%;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .hero {
+      background-color: #eaeaea;
+      text-align: center;
+      padding: 120px 10%;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 800px;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+
+    .hero-buttons {
+      margin-top: 40px;
+    }
+
+    .hero-buttons a {
+      text-decoration: none;
+      color: white;
+      background-color: #333;
+      padding: 15px 30px;
+      border-radius: 8px;
+      margin: 10px;
+      font-size: 22px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero-buttons a:hover {
+      background-color: #555;
+    }
+
+    .services {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .services img {
+      width: 45%;
+      border-radius: 10px;
+    }
+
+    .services-text {
+      width: 50%;
+    }
+
+    .benefits, .process, .contact {
+      background-color: #ffffff;
+      border-top: 2px solid #ddd;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .benefit-item, .process-step {
+      margin-bottom: 30px;
+    }
+
+    .contact {
+      text-align: center;
+      background-color: #f2f2f2;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 350px;
+      margin-top: 30px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #aaa;
+      font-size: 18px;
+    }
+
+    .contact button {
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      background-color: #333;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #222;
+      color: white;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hauptbildschirm -->
+  <section class="hero">
+    <h1>G.U.T.M.A.N.N GmbH</h1>
+    <p><strong>Ihr zuverlässiger Partner für professionelle Fahrzeuggutachten.</strong></p>
+    <p>Wir unterstützen Privatpersonen, Werkstätten und Versicherungen mit präzisen Schadengutachten, 
+      detaillierten Fahrzeugbewertungen und transparenten Kostenvoranschlägen. 
+      Unsere Erfahrung sichert Ihnen schnelle und faire Lösungen im Schadensfall.</p>
+    <div class="hero-buttons">
+      <a href="#services">Services</a>
+      <a href="#contact">Kontakt</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1495839760557-d150d64b4469?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170">
+  </section>
+
+  <!-- Über uns -->
+  <section id="about">
+    <h2>Wer wir sind</h2>
+    <p>Die G.U.T.M.A.N.N GmbH ist ein unabhängiges Sachverständigenbüro mit Sitz in Hagen, 
+      spezialisiert auf die Erstellung von Fahrzeuggutachten, Schadensanalysen und Wertgutachten. 
+      Unser erfahrenes Expertenteam arbeitet mit modernster Messtechnik und branchenspezifischem Know-how, 
+      um präzise und nachvollziehbare Ergebnisse zu liefern. 
+      Wir legen großen Wert auf Transparenz, Kundenorientierung und eine schnelle Bearbeitung. 
+      Ob Unfall, Wertbestimmung oder Leasingrückgabe – wir stehen Ihnen mit Fachwissen und Engagement zur Seite.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Unsere Leistungen</h2>
+    <div class="services">
+      <div class="services-text">
+        <h3>Schadengutachten</h3>
+        <p>Wir erstellen detaillierte Unfallgutachten zur Ermittlung von Reparaturkosten, 
+          Wertminderung und Nutzungsausfall. Unsere Dokumentationen sind gerichtsfest 
+          und werden von Versicherungen anerkannt.</p>
+
+        <h3>Fahrzeugbewertung</h3>
+        <p>Ob Kauf, Verkauf oder Finanzierung – wir bewerten Ihr Fahrzeug neutral und marktorientiert. 
+          So erhalten Sie eine verlässliche Grundlage für Ihre Entscheidungen.</p>
+
+        <h3>Kostenvoranschläge</h3>
+        <p>Für kleinere Schäden bieten wir schnelle und transparente Kostenvoranschläge, 
+          die auf realistischen Reparaturzeiten und Ersatzteilpreisen basieren.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1761032271380-0b6967b0169c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" alt="Gutachter bei der Arbeit">
+    </div>
+  </section>
+
+  <!-- Vorteile -->
+  <section class="benefits">
+    <h2>Warum G.U.T.M.A.N.N GmbH?</h2>
+    <div class="benefit-item">
+      <h3>Erfahrung & Kompetenz</h3>
+      <p>Unsere Sachverständigen verfügen über langjährige Erfahrung in der Kfz-Branche 
+        und bilden sich kontinuierlich weiter, um stets auf dem neuesten Stand der Technik zu bleiben.</p>
+    </div>
+    <div class="benefit-item">
+      <h3>Schnelle Bearbeitung</h3>
+      <p>Wir garantieren eine zügige Terminvergabe und eine schnelle Gutachtenerstellung – 
+        damit Sie im Schadensfall keine Zeit verlieren.</p>
+    </div>
+    <div class="benefit-item">
+      <h3>Unabhängigkeit & Neutralität</h3>
+      <p>Als freies Sachverständigenbüro arbeiten wir unabhängig von Versicherungen oder Werkstätten – 
+        unsere Ergebnisse sind objektiv und transparent.</p>
+    </div>
+  </section>
+
+  <!-- Prozess -->
+  <section class="process">
+    <h2>Unser Arbeitsprozess</h2>
+    <div class="process-step">
+      <h3>1. Kontaktaufnahme & Terminvereinbarung</h3>
+      <p>Sie erreichen uns telefonisch oder per E-Mail. Wir vereinbaren kurzfristig einen Termin zur Begutachtung Ihres Fahrzeugs.</p>
+    </div>
+    <div class="process-step">
+      <h3>2. Begutachtung & Analyse</h3>
+      <p>Vor Ort dokumentieren wir sämtliche Schäden und bewerten diese mithilfe moderner Messtechnik und branchenspezifischer Software.</p>
+    </div>
+    <div class="process-step">
+      <h3>3. Erstellung & Übergabe des Gutachtens</h3>
+      <p>Innerhalb weniger Tage erhalten Sie ein vollständiges, nachvollziehbares Gutachten – digital oder in Papierform.</p>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="contact">
+    <h2>Kontaktieren Sie uns</h2>
+    <p>Sie benötigen ein Gutachten oder haben Fragen zu unseren Leistungen? 
+      Schreiben Sie uns – wir melden uns schnellstmöglich bei Ihnen.</p>
+    <p>Wir stehen für Kompetenz, Vertrauen und klare Kommunikation – Ihr Anliegen ist bei uns in besten Händen.</p>
+    <p><strong>E-Mail:</strong> info@gutmanngmbh.de</p>
+    <p><strong>Adresse:</strong> Rathausstraße 18, 58095 Hagen</p>
+
+    <form>
+      <input type="text" placeholder="Ihr Name">
+      <input type="email" placeholder="Ihre E-Mail-Adresse">
+      <textarea rows="4" placeholder="Ihre Nachricht"></textarea>
+      <button type="submit">Nachricht senden</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 G.U.T.M.A.N.N GmbH – Alle Rechte vorbehalten.
+  </footer>
+
+</body>
+</html>
